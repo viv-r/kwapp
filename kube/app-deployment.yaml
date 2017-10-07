@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: app
-        image: app:latest
+        image: acme-container
         imagePullPolicy: IfNotPresent
         ports:
         - containerPort: 3000
