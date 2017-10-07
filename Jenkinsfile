@@ -1,4 +1,4 @@
-node {
+node(jnlp-slave) {
     def project = "${env.PROJECT_ID}"
     def appName = 'webapp'
     def feSvcName = "${appName}-service"
