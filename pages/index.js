@@ -36,7 +36,7 @@ const BarChart = Svg((node, props) => {
         .style('fill', fill)
         .on('mouseover', (data, index, nodes) => {
             select(nodes[index])
-                .style('fill', '#33ee33')
+                .style('fill', '#aaaaaa')
         })
         .on('mouseout', (data, index, nodes) => {
             select(nodes[index])
@@ -88,7 +88,7 @@ class RandomBarChartComponent extends React.Component {
                                 />
                             </div>
                             <div>
-                                <Text>Bar width: </Text>
+                                <Text>Bar spacing: </Text>
                                 <Slider
                                     min={0}
                                     max={20}

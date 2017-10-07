@@ -1,10 +1,15 @@
 import Header from '../components/Header';
 import Link from 'next/link';
-import { Text } from '@blueprintjs/core';
+import { Text, NonIdealState } from '@blueprintjs/core';
 
 export default (props) => (
-    <div>
+    <div className="main">
+        <style jsx> {` 
+            .main { 
+                height: 90vh; 
+            }
+        `} </style>
         <Header {...props.url} />
-        <Text>Nothing here yet.</Text>
+        <NonIdealState visual="warning-sign" title="Empty page" description="There's nothing here" />
     </div>
 );
