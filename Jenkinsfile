@@ -2,7 +2,7 @@ node {
     def project = "${PROJECT_ID}"
     def appName = 'webapp'
     def feSvcName = "${appName}-service"
-    def imageTag = "gcr.io/${project}/${appName}.${env.BUILD_NUMBER}"
+    def imageTag = "gcr.io/${project}/${appName}:${env.BUILD_NUMBER}"
 
     checkout scm
 
