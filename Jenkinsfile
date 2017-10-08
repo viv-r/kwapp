@@ -1,5 +1,5 @@
-node(jnlp-slave) {
-    def project = "${env.PROJECT_ID}"
+node {
+    def project = "aerial-yeti-182206"
     def appName = 'webapp'
     def feSvcName = "${appName}-service"
     def imageTag = "gcr.io/${project}/${appName}:${env.BRANCH_NAME}.${env.BUILD_NUMBER}"
