@@ -10,6 +10,6 @@ export default (props) => (
             }
         `} </style>
         <Header {...props.url} />
-        <NonIdealState visual="warning-sign" title="Empty page" description="There's nothing here" />
+        <NonIdealState visual="warning-sign" title="Empty page" description="There's nothing here!" />
     </div>
 );
