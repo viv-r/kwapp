@@ -6,7 +6,7 @@ node {
     checkout scm
 
     sh("docker build -t ${imageTag} .")
-    sh("docker login -u vivr2 -p ${DKEY}")
+    sh("docker login -u ${DUSR} -p ${DKEY}")
     sh("docker push ${imageTag}")
     sh("kubectl --namespace=production apply -f kube/")
 }
