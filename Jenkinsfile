@@ -1,7 +1,7 @@
 node {
     def appName = 'webapp'
     def feSvcName = "${appName}-service"
-    def imageTag = "vivr2/${appName}:${env.BUILD_NUMBER}"
+    def imageTag = "${DUSR}/${appName}:${env.BUILD_NUMBER}"
 
     checkout scm
 
