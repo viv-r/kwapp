@@ -10,7 +10,7 @@ metadata:
 spec:
   rules:
   - host: www.kube.site
-  - http:
+    http:
       paths:
       - path: /
         backend:
