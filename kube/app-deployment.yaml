@@ -1,7 +1,8 @@
 apiVersion: apps/v1beta1
 kind: Deployment
 metadata:
-  name: webapp-deployment
+  name: webapp
+  namespace: kube-system
 spec:
   selector:
     matchLabels:
@@ -13,7 +14,7 @@ spec:
         app: webapp
     spec:
       containers:
-      - name: app
+      - name: webapp
         image: acme-container
         imagePullPolicy: IfNotPresent
         ports:

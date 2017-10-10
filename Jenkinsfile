@@ -1,7 +1,5 @@
 node {
-    def appName = 'webapp'
-    def feSvcName = "${appName}-service"
-    def imageTag = "${DUSR}/${appName}:${env.BUILD_NUMBER}"
+    def imageTag = "${DUSR}/webapp:${env.BUILD_NUMBER}"
 
     checkout scm
 
@@ -9,5 +7,5 @@ node {
     sh("docker login -u ${DUSR} -p ${DKEY}")
     sh("docker push ${imageTag}")
     sh("sed -i.bak 's#acme-container#${imageTag}#' ./kube/*.yaml")
-    sh("kubectl --namespace=production apply -f kube/")
+    sh("kubectl apply -f kube/")
 }

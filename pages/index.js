@@ -88,7 +88,7 @@ class RandomBarChartComponent extends React.Component {
                                 />
                             </div>
                             <div>
-                                <Text>Bar spacing: </Text>
+                                <Text>Bar spacing   : </Text>
                                 <Slider
                                     min={0}
                                     max={20}
