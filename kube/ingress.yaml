@@ -12,6 +12,7 @@ spec:
   - host: www.kube.site
   - http:
       paths:
+        - path: /
         backend:
           serviceName: webapp
           servicePort: 80
