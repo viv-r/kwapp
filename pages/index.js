@@ -36,7 +36,7 @@ const BarChart = Svg((node, props) => {
         .style('fill', fill)
         .on('mouseover', (data, index, nodes) => {
             select(nodes[index])
-                .style('fill', '#aaaaaa')
+                .style('fill', '#aa5555')
         })
         .on('mouseout', (data, index, nodes) => {
             select(nodes[index])
