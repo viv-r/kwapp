@@ -31,9 +31,6 @@ export default class Navigation extends React.Component {
                     <Link href="/about">
                         <button className="pt-button pt-minimal pt-icon-document">About</button>
                     </Link>
-                    <Link href="/folder/page">
-                        <button className="pt-button pt-minimal pt-icon-document">Page</button>
-                    </Link>
                     <span className="pt-navbar-divider"></span>
                     <button className="pt-button pt-minimal pt-icon-user"></button>
                 </div>
